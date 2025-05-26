@@ -1,4 +1,4 @@
-<h1 align="center">🛡️ Secure Smart Contracts, Delivered</h1>
+<h1 align="center">🛡️ Secure Code, Delivered</h1>
 <p align="center">From ✍️ design → 🔍 audit → 🚀 launch → 🛠️ maintenance</p>
 
 
