@@ -1,13 +1,11 @@
-<h1 align="center">🛡️ Secure Code, Delivered</h1>
-<p align="center">From ✍️ design → 🔍 audit → 🚀 launch → 🛠️ maintenance</p>
-
-
+<h1 align="center">🚀 From Idea to Working Software — Fast & Secure 🛡️</h1>
+<h2 align="center">I build complete, ready-to-use products from scratch — so you can test your idea fast.</h2>
+<p align="center">From 💡 concept → 🧩 architecture → ⚙️ code → ✅ launch → 🛠️ support</p>
 <div align="center">
 
-  📞 [Let's talk](https://miladtsx.vercel.app/contact)
+  📞 [Start Building Now]([https://miladtsx.vercel.app/contact](https://cal.com/miladtsx/intro))
 
 </div>
-
 <!--
 - 🌐 [BlueSky](https://)
 - 💬 [micro-audits and Security tips](#)
