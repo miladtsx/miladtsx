@@ -1,14 +1,14 @@
 ## Failure Containment Engineering
 
-I assume systems will fail.  
-My job is making sure they fail safely.
+Systems will fail.  
+Engineering decides how.
 
-Engineer studying how complex systems break — and ensuring they fail safely.
+I build systems that remain predictable when assumptions break.
 
-Most systems do not fail because of missing features.  
-They fail because of hidden assumptions.
+Most outages do not come from missing features.  
+They come from hidden assumptions.
 
-My work focuses on exposing those assumptions and enforcing structural guarantees so failures remain predictable and contained.
+My work focuses on exposing those assumptions early and enforcing structural guarantees so faults remain contained and recovery is clear.
 
 Core method:
 
@@ -56,23 +56,7 @@ https://github.com/modelcontextprotocol/servers/pull/3505
 
 ---
 
-## Engineering Principles
-
-Systems rarely fail where designers expect.
-
-Failures usually emerge from:
-
-- implicit assumptions
-- inconsistent state transitions
-- edge conditions under load
-- adversarial or unexpected inputs
-
-I design systems assuming failure will happen —  
-and enforce guarantees so they degrade safely instead of catastrophically.
-
----
-
 ## Field Notes
 
-[failure-notes](https://github.com/failuresmith/failure-notes) → real-world failure investigations  
-[failure-lab](https://github.com/failuresmith/failure-lab) → deterministic failure experiments
+[failure-notes](https://github.com/failuresmith/failure-notes) → investigations into real-world failure modes  
+[failure-lab](https://github.com/failuresmith/failure-lab) → deterministic experiments for discovering system weaknesses
