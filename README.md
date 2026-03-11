@@ -1,21 +1,31 @@
 ## Failure Containment Engineering
 
-Systems will fail.  
+**Systems will fail.**  
 Engineering decides how.
 
-I build systems that remain predictable when assumptions break.
+---
+
+I build systems that remain predictable  
+when assumptions break.
+
+---
 
 Most outages do not come from missing features.  
-They come from hidden assumptions.
+They come from **hidden assumptions**.
 
-My work focuses on exposing those assumptions early and enforcing structural guarantees so faults remain contained and recovery is clear.
+---
 
-Core method:
+My work focuses on exposing those assumptions early  
+and enforcing structural guarantees so faults remain contained and recovery is clear.
 
-- make invariants explicit
-- detect ambiguous state transitions
-- enforce fail-fast guarantees
-- define clear recovery boundaries
+---
+
+### Method
+
+• make invariants explicit  
+• detect ambiguous state transitions  
+• enforce fail-fast guarantees  
+• define clear recovery boundaries
 
 ---
 
@@ -24,33 +34,33 @@ Core method:
 <details>
 <summary>NEAR MPC — Threshold Cryptography Infrastructure</summary>
 
-Discovered identity-binding ambiguity during protocol startup.
+Peer identity depended on implicit TLS ↔ participant binding.
 
-Without strict participant ↔ TLS key binding, peer attribution can become ambiguous across nodes, weakening protocol safety assumptions.
-
-https://github.com/near/mpc/issues/2250
+Without explicit enforcement, node attribution could become ambiguous across the protocol network.  
+[near/mpc#2250](https://github.com/near/mpc/issues/2250)
 
 </details>
 
 <details>
 <summary>Ironclaw — AI Agent Orchestration</summary>
 
-Identified credential lifecycle mismatch during plugin removal.
+Plugin removal did not revoke associated credential authority.
 
-Credential mappings could remain active after plugin uninstall, creating permission-state inconsistencies.
+Credential mappings could remain active after uninstall,
+leaving permissions inconsistent with runtime state.
 
-https://github.com/nearai/ironclaw/issues/358
+[nearai/ironclaw#358](https://github.com/nearai/ironclaw/issues/358)
 
 </details>
 
 <details>
-<summary>Model Context Protocol — AI Tooling Infrastructure</summary>
+<summary>Model Context Protocol — Filesystem MCP Server</summary>
 
-Improved robustness of server request handling under malformed or unexpected input flows.
+Read-only mode relied on client hints rather than server enforcement.
 
-Focused on eliminating undefined behavior at protocol boundaries.
+Filesystem write tools remained callable despite read-only intent.
 
-https://github.com/modelcontextprotocol/servers/pull/3505
+[modelcontextprotocol/servers#3505](https://github.com/modelcontextprotocol/servers/pull/3505)
 
 </details>
 
@@ -58,5 +68,5 @@ https://github.com/modelcontextprotocol/servers/pull/3505
 
 ## Field Notes
 
-[failure-notes](https://github.com/failuresmith/failure-notes) → investigations into real-world failure modes  
-[failure-lab](https://github.com/failuresmith/failure-lab) → deterministic experiments for discovering system weaknesses
+[failure-patterns](https://github.com/failuresmith/failure-patterns) → real-world investigations  
+[failure-lab](https://github.com/failuresmith/failure-lab) → controlled experiments
