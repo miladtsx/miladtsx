@@ -12,7 +12,3 @@ I engineer systems to remain predictable when assumptions break.
 • eliminate ambiguous state transitions  
 • enforce fail-fast guarantees  
 • define recovery boundaries
-
----
-
-Failure investigations → [failure-patterns](https://github.com/failuresmith/failure-patterns/tree/main/patterns)
